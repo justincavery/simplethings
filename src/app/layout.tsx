@@ -1,36 +1,21 @@
-import { Inter } from 'next/font/google'
-import clsx from 'clsx'
-
-import '@/styles/tailwind.css'
 import { type Metadata } from 'next'
 
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-inter',
-})
+import { RootLayout } from '@/components/RootLayout'
+
+import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Pocket',
-    default: 'Pocket - Invest at the perfect time.',
+    template: '%s - Studio',
+    default: 'Studio - Award winning developer studio based in Denmark',
   },
-  description:
-    'By leveraging insights from our network of industry insiders, you’ll know exactly when to buy to maximize profit, and exactly when to sell to avoid painful losses.',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html
-      lang="en"
-      className={clsx('h-full bg-gray-50 antialiased', inter.variable)}
-    >
-      <body className="flex h-full flex-col">
-        <div className="flex min-h-full flex-col">{children}</div>
+    <html lang="en" className="h-full bg-neutral-950 text-base antialiased">
+      <body className="flex min-h-full flex-col">
+        <RootLayout>{children}</RootLayout>
       </body>
     </html>
   )
