@@ -171,8 +171,6 @@ function Services() {
             <ListItem title="Web Security for Web3.">
             With the advent of Web3, security is more important than ever. Our team ensures your site remains impenetrable and safe.
             </ListItem>
-             
-
           </List>
         </div>
       </Container>
@@ -207,7 +205,7 @@ export default async function Home() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'PeopleScout', logo: logoPhobiaDark }}
+        client={{ name: 'PeopleScout', logo: logoPeopleScout }}
       >
         Justin was able to provide us with leading technology solutions and advice. 
         We're always happy to put them in front of the client knowing they'll deliver every time.

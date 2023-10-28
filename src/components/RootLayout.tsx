@@ -20,6 +20,8 @@ import { GridPattern } from '@/components/GridPattern'
 import { Logo, Logomark } from '@/components/Logo'
 import { Offices } from '@/components/Offices'
 import { SocialMedia } from '@/components/SocialMedia'
+import Image from 'next/image'
+import logoSimpleThings from '@/images/simplethings-logo.svg'
 
 const RootLayoutContext = createContext<{
   logoHovered: boolean
@@ -69,16 +71,14 @@ function Header({
           onMouseEnter={() => setLogoHovered(true)}
           onMouseLeave={() => setLogoHovered(false)}
         >
-          <Logomark
-            className="h-8 sm:hidden"
-            invert={invert}
-            filled={logoHovered}
-          />
-          <Logo
-            className="hidden h-8 sm:block"
-            invert={invert}
-            filled={logoHovered}
-          />
+        <Image
+                      src={logoSimpleThings}
+                      alt=""
+                      className="h-8 w-8 flex-none"
+                      width={100}
+                      height={100}
+                      unoptimized
+        />
         </Link>
         <div className="flex items-center gap-x-8">
           <Button href="/contact" invert={invert}>
