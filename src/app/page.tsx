@@ -9,35 +9,18 @@ import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
-import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
-import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
-import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
-import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
-import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
-import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
-import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
-import logoUnseal from '@/images/clients/unseal/logo-light.svg'
-import logoMissLolly from '@/images/clients/unseal/logo-light.svg'
-import logoPeopleScout from '@/images/clients/unseal/logo-light.svg'
-import logoNftx from '@/images/clients/unseal/logo-light.svg'
-import logoFloorDao from '@/images/clients/unseal/logo-light.svg'
+import logoLauraYoga from '@/images/clients/laura-yoga/logo-light.svg'
+import logoPeopleScout from '@/images/clients/people-scout/logo-light.svg'
+import logoNftx from '@/images/clients/nftx/logo-light.svg'
+import logoFloorDao from '@/images/clients/floor/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 
 const clients = [
-  ['Miss Lolly', logoMissLolly],
+  ['Laura Yoga', logoLauraYoga],
   ['PeopleScout', logoPeopleScout],
   ['NFTX', logoNftx],
   ['FloorDAO', logoFloorDao],
-  ['Phobia', logoPhobiaLight],
-  ['Family Fund', logoFamilyFund],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
 ]
 
 function Clients() {
